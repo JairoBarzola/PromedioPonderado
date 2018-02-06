@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/background"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:id="@+id/activity_main"
+    android:paddingTop="30dp"
+
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorLetra"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:text="@string/informacion" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textnro"
+            android:textColor="@color/colorLetra"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/preguntas"
+            android:id="@+id/selectnumber"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorInfo"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/informacion1" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorInfo"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginRight="20dp"
+            android:text="@string/informacion2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:focusable="false"
+            android:id="@+id/row1"
+            android:visibility="gone"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:id="@+id/promediofinal1"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:inputType="number"
+                android:maxLength="1"
+                android:digits="1234567"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:id="@+id/nrodecreditos1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:id="@+id/row2"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:id="@+id/promediofinal2"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:inputType="number"
+                android:maxLength="1"
+                android:digits="1234567"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:id="@+id/nrodecreditos2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:id="@+id/row3"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:id="@+id/promediofinal3"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:nextFocusRight="@+id/nrodecreditos"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="15dp"
+                android:digits="1234567"
+                android:singleLine="true"
+                android:id="@+id/nrodecreditos3"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:id="@+id/row4"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:id="@+id/promediofinal4"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:nextFocusRight="@+id/nrodecreditos"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:inputType="number"
+                android:maxLength="1"
+                android:digits="1234567"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:id="@+id/nrodecreditos4"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:id="@+id/row5"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:id="@+id/promediofinal5"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:nextFocusRight="@+id/nrodecreditos"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="15dp"
+                android:digits="1234567"
+                android:singleLine="true"
+
+                android:id="@+id/nrodecreditos5"/>
+
+        </LinearLayout>
+        <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:id="@+id/row6"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:hint="0"
+            android:paddingLeft="5dp"
+            android:background="@drawable/editext_personalizado"
+            android:id="@+id/promediofinal6"
+            android:inputType="number"
+            android:textSize="15dp"
+            android:maxLength="2"
+            android:singleLine="true"
+            android:layout_marginRight="8dp"/>
+
+        <EditText
+            android:layout_marginLeft="8dp"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:hint="0"
+            android:paddingLeft="5dp"
+            android:background="@drawable/editext_personalizado"
+            android:inputType="number"
+            android:maxLength="1"
+            android:digits="1234567"
+            android:singleLine="true"
+
+            android:textSize="15dp"
+            android:id="@+id/nrodecreditos6"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:id="@+id/row7"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:id="@+id/promediofinal7"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:hint="0"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editext_personalizado"
+                android:inputType="number"
+                android:maxLength="2"
+                android:digits="1234567"
+                android:textSize="15dp"
+                android:singleLine="true"
+
+                android:id="@+id/nrodecreditos7"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:textColor="@color/colorLetra"
+            android:text="@string/calc"
+            android:id="@+id/botonCalc"
+            android:visibility="gone"
+            android:background="@drawable/boton_redondo"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/informa"
+            android:textColor="@color/colorLetra"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="El promedio ponderado es: "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36dp"
+            android:typeface="monospace"
+            android:textColor="@color/colorLetra"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:id="@+id/promedio"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/image"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

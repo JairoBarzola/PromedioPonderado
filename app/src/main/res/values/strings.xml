@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PromedioPonderado</string>
+    <string name="informacion">Cursos: </string>
+    <string name="informacion1">Promedio Final</string>
+    <string name="informacion2">Nro. de Créditos</string>
+    <string name="calc">Calcular</string>
+</resources>
